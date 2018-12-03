@@ -1,10 +1,15 @@
+
+function randNumb() {
+    return Math.floor(Math.random() * 255);
+}
+
 var colors = [
-    "rgb(255, 0, 0)",
-    "rgb(255, 255, 0)",
-    "rgb(0, 255, 0)",
-    "rgb(0, 255, 255)",
-    "rgb(0, 0, 255)",
-    "rgb(255, 0, 255)"
+    "rgb(" + randNumb() + ", " + randNumb() + ", " + randNumb() + ")",
+    "rgb(" + randNumb() + ", " + randNumb() + ", " + randNumb() + ")",
+    "rgb(" + randNumb() + ", " + randNumb() + ", " + randNumb() + ")",
+    "rgb(" + randNumb() + ", " + randNumb() + ", " + randNumb() + ")",
+    "rgb(" + randNumb() + ", " + randNumb() + ", " + randNumb() + ")",
+    "rgb(" + randNumb() + ", " + randNumb() + ", " + randNumb() + ")"
 ];
 
 var squares = document.querySelectorAll(".square");
@@ -16,15 +21,15 @@ colorDisplay.textContent = pickedColor;
 for (var i = 0; i < squares.length; i++) {
     squares[i].style.backgroundColor = colors[i];
 
-    squares[i].addEventListener("click", function () {
+    squares[i].addEventListener("click", clickSquare);
+}
 
-        var clickedColor = this.style.backgroundColor;
+function clickSquare() {
+    var clickedColor = this.style.backgroundColor;
 
-        if(clickedColor === pickedColor) {
-            alert("Correct");
-        } else {
-            alert("Wrong");
-        }
-    });
-
+    if(clickedColor === pickedColor) {
+        alert("Correct");
+    } else {
+        alert("Wrong");
+    }
 }
