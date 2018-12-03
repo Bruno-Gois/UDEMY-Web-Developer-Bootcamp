@@ -1,19 +1,19 @@
 
-function randNumb() {
+function randRGBNumb() {
     return Math.floor(Math.random() * 255);
 }
 
 var colors = [
-    "rgb(" + randNumb() + ", " + randNumb() + ", " + randNumb() + ")",
-    "rgb(" + randNumb() + ", " + randNumb() + ", " + randNumb() + ")",
-    "rgb(" + randNumb() + ", " + randNumb() + ", " + randNumb() + ")",
-    "rgb(" + randNumb() + ", " + randNumb() + ", " + randNumb() + ")",
-    "rgb(" + randNumb() + ", " + randNumb() + ", " + randNumb() + ")",
-    "rgb(" + randNumb() + ", " + randNumb() + ", " + randNumb() + ")"
+    "rgb(" + randRGBNumb() + ", " + randRGBNumb() + ", " + randRGBNumb() + ")",
+    "rgb(" + randRGBNumb() + ", " + randRGBNumb() + ", " + randRGBNumb() + ")",
+    "rgb(" + randRGBNumb() + ", " + randRGBNumb() + ", " + randRGBNumb() + ")",
+    "rgb(" + randRGBNumb() + ", " + randRGBNumb() + ", " + randRGBNumb() + ")",
+    "rgb(" + randRGBNumb() + ", " + randRGBNumb() + ", " + randRGBNumb() + ")",
+    "rgb(" + randRGBNumb() + ", " + randRGBNumb() + ", " + randRGBNumb() + ")"
 ];
 
 var squares = document.querySelectorAll(".square");
-var pickedColor = colors[3];
+var pickedColor = colors[Math.floor(Math.random() * 6)];
 var colorDisplay = document.getElementById("colorDisplay");
 
 colorDisplay.textContent = pickedColor;

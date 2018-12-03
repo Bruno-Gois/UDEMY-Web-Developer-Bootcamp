@@ -27,8 +27,8 @@
       <file leaf-file-name="colorGame.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/colorGame.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="28" lean-forward="true" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+            <state relative-caret-position="221">
+              <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -134,12 +134,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1543849237632</updated>
-      <workItem from="1543849239733" duration="706000" />
+      <workItem from="1543849239733" duration="1157000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="706000" />
+    <option name="totallyTimeSpent" value="1157000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1608" y="-8" width="1616" height="916" extended-state="6" />
@@ -175,7 +175,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/colorGame.html">
+    <entry file="file://$PROJECT_DIR$/colorGame.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -183,7 +183,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/colorGame.css">
+    <entry file="file://$PROJECT_DIR$/colorGame.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -193,8 +193,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/colorGame.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="28" lean-forward="true" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+        <state relative-caret-position="221">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding />
         </state>
       </provider>
