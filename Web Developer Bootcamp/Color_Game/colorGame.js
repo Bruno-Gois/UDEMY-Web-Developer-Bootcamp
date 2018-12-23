@@ -3,7 +3,7 @@ function randRGBNumb() {
     return Math.floor(Math.random() * 255);
 }
 
-var colors = [
+let colors = [
     "rgb(" + randRGBNumb() + ", " + randRGBNumb() + ", " + randRGBNumb() + ")",
     "rgb(" + randRGBNumb() + ", " + randRGBNumb() + ", " + randRGBNumb() + ")",
     "rgb(" + randRGBNumb() + ", " + randRGBNumb() + ", " + randRGBNumb() + ")",
@@ -12,24 +12,32 @@ var colors = [
     "rgb(" + randRGBNumb() + ", " + randRGBNumb() + ", " + randRGBNumb() + ")"
 ];
 
-var squares = document.querySelectorAll(".square");
-var pickedColor = colors[Math.floor(Math.random() * 6)];
-var colorDisplay = document.getElementById("colorDisplay");
-
+let squares = document.querySelectorAll(".square");
+let pickedColor = colors[Math.floor(Math.random() * 6)];
+let colorDisplay = document.getElementById("colorDisplay");
+let messageDisplay = document.querySelector("#message");
 colorDisplay.textContent = pickedColor;
 
-for (var i = 0; i < squares.length; i++) {
+for (let i = 0; i < squares.length; i++) {
     squares[i].style.backgroundColor = colors[i];
 
     squares[i].addEventListener("click", clickSquare);
 }
 
 function clickSquare() {
-    var clickedColor = this.style.backgroundColor;
+    let clickedColor = this.style.backgroundColor;
 
     if(clickedColor === pickedColor) {
-        alert("Correct");
+        messageDisplay.textContent = "Correct!";
+        changeColors(clickedColor);
     } else {
-        alert("Wrong");
+        this.style.backgroundColor = "#232323";
+        messageDisplay.textContent = "Try Again";
+    }
+}
+
+function changeColors(color) {
+    for(let i = 0; i < color.length; i++) {
+        squares[i].style.backgroundColor = color;
     }
 }
