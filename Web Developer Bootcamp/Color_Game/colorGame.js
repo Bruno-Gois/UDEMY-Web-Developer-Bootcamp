@@ -13,10 +13,12 @@ let colors = [
 ];
 
 let squares = document.querySelectorAll(".square");
-let pickedColor = colors[Math.floor(Math.random() * 6)];
+let pickedColor = colors[Math.floor(Math.random() * colors.length)];
 let colorDisplay = document.getElementById("colorDisplay");
 let messageDisplay = document.querySelector("#message");
 colorDisplay.textContent = pickedColor;
+
+document.getElementById("btn").onclick = function () { window.location.reload();};
 
 for (let i = 0; i < squares.length; i++) {
     squares[i].style.backgroundColor = colors[i];

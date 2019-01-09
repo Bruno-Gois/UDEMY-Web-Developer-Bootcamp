@@ -15,10 +15,25 @@ body {
     max-width: 600px;
 }
 
+#header {
+    background-color: cadetblue;
+    text-align: center;
+}
+
+#header2 {
+    background-color: white;
+    text-align: center;
+}
+
 h1 {
     color: white;
+    margin: 0;
 }
 
 span {
     color: white;
+}
+
+div span {
+    color: black;
 }
