@@ -16,6 +16,7 @@ let squares = document.querySelectorAll(".square");
 let pickedColor = colors[Math.floor(Math.random() * colors.length)];
 let colorDisplay = document.getElementById("colorDisplay");
 let messageDisplay = document.querySelector("#message");
+let header = document.querySelector("#header");
 colorDisplay.textContent = pickedColor;
 
 document.getElementById("btn").onclick = function () { window.location.reload();};
@@ -32,6 +33,8 @@ function clickSquare() {
     if(clickedColor === pickedColor) {
         messageDisplay.textContent = "Correct!";
         changeColors(clickedColor);
+        console.log(clickedColor);
+
     } else {
         this.style.backgroundColor = "#232323";
         messageDisplay.textContent = "Try Again";
@@ -39,7 +42,8 @@ function clickSquare() {
 }
 
 function changeColors(color) {
-    for(let i = 0; i < color.length; i++) {
+    for(let i = 0; i < colors.length; i++) {
         squares[i].style.backgroundColor = color;
     }
+    header.style.backgroundColor = color;
 }
